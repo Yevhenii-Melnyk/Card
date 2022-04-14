@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1820;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.section {
+  background: url("../img/backgraund.png") no-repeat center top/ cover;
+}
+
+.section__title {
+  font-size: 48px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 115px;
+}
+
+.section__title-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #949494;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section__id {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  padding-top: 135px;
+}
+
+.section__box-img {
+  display: flex;
+  justify-content: center;
+}
+
+.section__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.section__subtext {
+  font-size: 18px;
+  line-height: 30px;
+  color: #949494;
+  font-weight: 300;
+  font-family: "Proxima Nova";
+  text-align: center;
+  padding-top: 10px;
+}
+
+.section__button-box {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  display: flex;
+  justify-content: center;
+}
+
+.section__button {
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  text-align: center;
+  width: 205px;
+  min-height: 50px;
+  border-radius: 25px;
+  border-color: darkcyan;
+  background-image: linear-gradient(74deg, #48007c 0%, #e70087 100%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+  .section__id {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__id {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+  }
+}
